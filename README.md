@@ -1,3 +1,3 @@
 ### README
 
-This project is my base for building react apps, it has my favorite packages in it.
+Example using react-redux-router, react-sticky and react-scroll to create a single site with multiple long scrolling pages.
