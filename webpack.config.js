@@ -34,6 +34,7 @@ const common = {
 	},
 	output: {
 		path: PATHS.build,
+		filename: 'webpack.js',
 		publicPath: '/'
 	},
 	module: {

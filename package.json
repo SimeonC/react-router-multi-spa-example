@@ -1,15 +1,16 @@
 {
-  "name": "react-base",
-  "description": "react base project",
+  "name": "react-router-multi-spa-example",
+  "description": "react example project",
   "main": "index.jsx",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simeonc/react-base.git"
+    "url": "https://github.com/simeonc/react-router-multi-spa-example.git"
   },
   "scripts": {
-    "build": "webpack && babel-node translate.js",
-    "deploy": "grunt build-release",
+    "build": "webpack",
+	"build-translations": "webpack && babel-node translate.js",
+    "deploy": "webpack -p --optimize-dedupe --optimize-minimize --bail",
     "start": "webpack-dev-server",
     "test": "babel-node ./node_modules/istanbul/lib/cli.js cover --report text --report html _mocha --require testSetup.js -- 'src/**/*-tests.jsx'",
     "test-only": "mocha --compilers .:babel-core/register --require testSetup.js 'src/**/*-tests.jsx'",
