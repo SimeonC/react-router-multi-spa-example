@@ -9,8 +9,6 @@ import configureStore from './redux/configureStore'
 
 import Root from './components/Root.jsx';
 
-require("font-awesome-webpack");
-
 addLocaleData(enLocaleData);
 
 const store = configureStore();
