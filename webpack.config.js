@@ -34,8 +34,7 @@ const common = {
 	},
 	output: {
 		path: PATHS.build,
-		filename: 'webpack.js',
-		publicPath: '/'
+		filename: 'webpack.js'
 	},
 	module: {
 		loaders: [
