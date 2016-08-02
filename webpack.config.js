@@ -34,7 +34,8 @@ const common = {
 	},
 	output: {
 		path: PATHS.build,
-		filename: 'webpack.js'
+		filename: 'webpack.js',
+		publicPath: 'https://simeonc.github.io/react-router-multi-spa-example/'
 	},
 	module: {
 		loaders: [
